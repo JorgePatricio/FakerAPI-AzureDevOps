@@ -1,3 +1,4 @@
+/// <reference types="cypress" />
 
 class CoverPhotos {
     getCoverPhotos() {
@@ -50,3 +51,5 @@ class CoverPhotos {
         })
     }
 }
+
+export default new CoverPhotos

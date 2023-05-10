@@ -1,3 +1,4 @@
+/// <reference types="cypress" />
 
 class Authors {
     getAuthors() {
@@ -50,3 +51,5 @@ class Authors {
         })
     }
 }
+
+export default new Authors

@@ -1,3 +1,4 @@
+/// <reference types="cypress" />
 
 class Books {
     getBooks() {
@@ -42,3 +43,5 @@ class Books {
         })
     }
 }
+
+export default new Books

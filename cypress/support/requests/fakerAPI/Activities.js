@@ -1,9 +1,10 @@
+/// <reference types="cypress" />
 
 class Activities {
-    getActivities() {
+    getActivities(){
         return cy.request({
             method: "GET",
-            url: `${Cypress.env("FakerAPI")}/api/v1/Activities`,
+            url: `${Cypress.env("FakerAPI")}/Activities`,
             failOnStatusCode: false
         })
     }
@@ -11,16 +12,16 @@ class Activities {
     postActivities(payload) {
         return cy.request({
             method: "POST",
-            url: `${Cypress.env("FakerAPI")}/api/v1/Activities`,
+            url: `${Cypress.env("FakerAPI")}/Activities`,
             failOnStatusCode: false,
             body: payload
         })
     }
 
-    getActivities(id) {
+    getActivitiesId(id) {
         return cy.request({
             method: "GET",
-            url: `${Cypress.env("FakerAPI")}/api/v1/Activities/${id}`,
+            url: `${Cypress.env("FakerAPI")}/Activities/${id}`,
             failOnStatusCode: false
         })
     }
@@ -28,7 +29,7 @@ class Activities {
     putActivities(id, payload) {
         return cy.request({
             method: "PUT",
-            url: `${Cypress.env("FakerAPI")}/api/v1/Activities/${id}`,
+            url: `${Cypress.env("FakerAPI")}/Activities/${id}`,
             failOnStatusCode: false,
             body: payload
         })
@@ -37,8 +38,10 @@ class Activities {
     deleteActivities(id) {
         return cy.request({
             method: "DELETE",
-            url: `${Cypress.env("FakerAPI")}/api/v1/Activities/${id}`,
+            url: `${Cypress.env("FakerAPI")}/Activities/${id}`,
             failOnStatusCode: false
         })
     }
 }
+
+export default new Activities

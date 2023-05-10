@@ -1,3 +1,4 @@
+/// <reference types="cypress" />
 
 class Users {
     getUsers() {
@@ -42,3 +43,5 @@ class Users {
         })
     }
 }
+
+export default new Users
