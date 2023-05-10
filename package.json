@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "cypress": "^12.12.0"
+  },
+  "name": "fakerapi---azuredevops",
+  "version": "1.0.0",
+  "description": "Estudo da API usando FakerAPI",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jorge Patricio",
+  "license": "MIT"
+}
