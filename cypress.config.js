@@ -6,4 +6,5 @@ module.exports = defineConfig({
       // implement node event listeners here
     },
   },
+  FakerAPI: 'https://fakerestapi.azurewebsites.net' //BaseUrl para o FakerAPI
 });
