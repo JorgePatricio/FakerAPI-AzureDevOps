@@ -21,12 +21,12 @@ class Authors {
     getAuthorsBooks(idBook) {
         return cy.request({
             method: "GET",
-            url: `${Cypress.env("FakerAPI")}/api/v1/api/v1/Authors/authors/books/${idBook}`,
+            url: `${Cypress.env("FakerAPI")}/api/v1/Authors/authors/books/${idBook}`,
             failOnStatusCode: false
         })
     }
 
-    getAuthors(id) {
+    getAuthorsId(id) {
         return cy.request({
             method: "GET",
             url: `${Cypress.env("FakerAPI")}/api/v1/Authors/${id}`,
